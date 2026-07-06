@@ -1,0 +1,13 @@
+name: "run on pushing on any branches"
+on:
+    push:
+        branches:
+            - "*"
+
+jobs:
+    print_something:
+        runs-on: ubuntu-latest
+    
+        steps:
+            - name: "print anything"
+              run: echo "print on push anywhere"

@@ -7,6 +7,8 @@ on:
             - main
             - production
 
+
+# One job with multiple steps
 jobs:
     hello_world:  # name of the job
         runs-on: ubuntu-latest # runner to run these actions
@@ -16,3 +18,4 @@ jobs:
 
             - name: "Print current date"
               run: date
+
